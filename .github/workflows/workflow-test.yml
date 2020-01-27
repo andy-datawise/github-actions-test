@@ -18,11 +18,8 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get install python3-pip
-          pip3 install pyopenssl
           pip3 install --upgrade pip
           pip3 install -r ./requirements.txt
-          export CLOUDSDK_PYTHON_SITEPACKAGES=1
-          env
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
             version: '275.0.0'
