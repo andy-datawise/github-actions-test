@@ -19,5 +19,5 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get install python3-pip
-          ls > test.txt
-          echo $(<test.txt)
+          pip3 install --upgrade pip
+          pip3 install -r ./requirements.txt
