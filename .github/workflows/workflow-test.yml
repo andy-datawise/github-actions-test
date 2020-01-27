@@ -19,4 +19,5 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get install python3-pip
-          ls
+          ls > test.txt
+          cat test.txt
