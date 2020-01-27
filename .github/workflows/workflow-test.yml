@@ -20,4 +20,4 @@ jobs:
         run: |
           sudo apt-get install python3-pip
           ls > test.txt
-          cat test.txt
+          echo $(<test.txt)
