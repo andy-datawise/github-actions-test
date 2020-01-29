@@ -4,7 +4,6 @@ name: auto_deploy_test
 on:
   push:
     branches:
-    - master
     - hi
 
 jobs:
