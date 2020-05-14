@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with: 
-          path: ./1/2/
+          path: ./1/2/3/4
       - name: Set up Python 3.7
         uses: actions/setup-python@v1
         with:
@@ -20,6 +20,7 @@ jobs:
       - name: ls1
         run: |
           ls
+          pwd
       - name: Install Dependencies
         run: |
           sudo apt-get install python3-pip
