@@ -20,7 +20,9 @@ jobs:
           sudo apt-get install python3-pip
           pip3 install --upgrade pip
           pip3 install -r ./requirements.txt
+      - uses: actions/checkout@v2
+        with:
+          path: ./1/2/
       - name: Deploy and Set Variables
         run: |
-          cd ./1/2/
           ls
