@@ -32,3 +32,4 @@ jobs:
       - name: cd
         run: |
           cd ./1/2
+          echo ${{ github.repository }}
